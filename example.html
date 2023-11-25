@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let str="Madam";
+        // let palindrome="";
+        // for(var i=0;i<str.length;i++){
+        //    value=str.charAt(i) ;
+        //    palindrome+=value;
+        // }if(str==palindrome){
+        //     console.log("Paindrome")
+        // }else{
+        //     console.log("not a Paindrome")
+        // }
+//          let str="mom"
+//         const palin=(str)=>str.split("").reverse().join();
+//         if(str==palin){
+//             console.log("Paindrome")
+//         }else{
+//             console.log("not a Paindrome")
+//         }
+    
+
+
+
+//         var num=parseInt(prompt("Enter a number"));
+//         if(num %2===0){
+//             console.log("Even no ")
+//         }else{
+//             console.log("Odd no")
+//         }
+
+//         // var no=[23,4,5,67,88,1,43];
+//         // var largest=Math.max(...no);
+//         // console.log(largest)
+
+//         var num=[40,1,77,68,49];
+//         var highest=-1;
+//         var secondHighest=-1;
+//         for( let i=0;i<num.length;i++){
+//             if(num[i]>highest){
+//                 secondHighest=highest;
+//                 highest=num[i]
+//             }else if(num[i]>highest){
+//                 secondHighest=arr[i];
+//         }
+//     }console.log(secondHighest);
+
+//         // no=no.sort((a,b)=>a-b).reverse();
+//         // console.log(no[1])
+
+//         const arr=[22,45,5,6,78,9,4,9,22,45];
+//         const duplicates=arr.filter((ele,index,arr)=>arr.indexOf(ele)!==index);
+//         console.log(duplicates)
+
+//         const months=['may','feb','april','may','feb','feb'];
+//        const dupcount=months.reduce((obj,month)=>{
+//         if(obj[month]==undefined){
+//             obj[month]=1;
+//         return obj;        
+//     }else{
+//         obj[month]++;
+//         return obj;  
+//     }
+//        },{})
+
+//        const days=['sunday','monday','tuesday','wednesday','thursday','friday','saturday']
+       
+//        let updated =[];
+//        for (let day of days) {
+//         day=day.charAt(0).toUpperCase()+day.substring(1)
+//         updated.push(day)
+//        }console.log(updated)
+         
+
+//        const day=['sunday','monday','tuesday','wednesday','thursday','friday','saturday'];
+//        var finaljoin=day.join(" ");
+//        console.log(finaljoin)
+
+//       let arr1=[3,6,9,2,4,5,8];
+//       let arr2=[0,7,1];
+//       let result=arr1.some(ele=>arr2.includes(ele))
+//       console.log(result)
+
+//     //   Anagram having same letter in diff words (army&mary)
+//     const str1="Mary";
+//     const str2="Ary";
+//     function anagram(str1,str2){
+//         var a=str1.toLowerCase();
+//         var b=str2.toLowerCase();
+//         a=a.split("").sort().join("")
+//         b=b.split("").sort().join("")
+//         return a===b
+//     }
+//     console.log(anagram(str1,str2))
+      
+// // extract json data from object
+//     const input={
+//         "students":[
+//             {
+//                 id:1,
+//                 name:"Dolly",
+//                 email:"dollykotur34@gmail.com"
+//             },
+//             {
+//                 id:3,
+//                 name:"guru",
+//                 email:"guru143@gmail.com"
+//             },
+//             {
+//                 id:4,
+//                 name:"sneha",
+//                 email:"sneha34@gmail.com"
+//             }
+//         ]
+//         }
+//         var output=input.students.map(function(item){
+//             var sdetails={
+//             id:item.id,
+//                 name:item.name,
+//                 email:item.email
+//             }
+//             return sdetails;
+
+//         })
+//         console.log(output)
+
+//         var oue3332tput=input.students.filter(function(item){
+//             return item.id>2?item:"";
+//                 })
+//                 console.log(output)
+
+        
+//         var str3="Welcome to home page";
+//        var str4= str3.split("").reverse().join("");
+//        console.log(str4);
+
+
+//        var no=[23,4,5,67,88,1,43];
+//        let isarray=Array.isArray(no);
+//        console.log(isarray);
+
+//     //    Empty an array (4ways)
+
+//       var no=[23,4,5,67,88,1,43];
+//     //   1.
+//        no=[];
+//       console.log(no)
+//     //   2.
+//          no.length=0;
+//          console.log(no)
+//     //  3.
+//         while(no.length>0){
+//             no.pop();
+
+//         }console.log(no)
+//     // 4.
+//     no.splice(0,no.length);
+//     console.log(no)
+
+    
+//     var arra=["a","b","c","d","e"];
+//     var reverse=arra.slice().reverse();
+//     console.log(reverse);
+//     console.log(arra)
+
+
+    let str="abcde";
+let count=0;
+let strSplit=str.split("");
+console.log(strSplit)
+for(let i=0;i<strSplit.length;i++){
+    if(strSplit[i]==='a'||strSplit[i]==='e'||strSplit[i]==='i'||strSplit[i]==='o'||strSplit[i]==='u'){
+        count=count+1;
+    }
+}
+ console.log(count);
+    </script>
+</body>
+</html>
