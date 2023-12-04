@@ -109,3 +109,49 @@ form input {
   color: #1565c0;
 }
 </style>
+
+
+App.vue
+
+
+<template>
+  <div id="app">
+    <LoanCalculator />
+  </div>
+</template>
+
+<script>
+import LoanCalculator from "@/components/LoanCalculator.vue";
+
+export default {
+  components: {
+    LoanCalculator,
+  },
+};
+</script>
+
+
+main.js
+
+import Vue from "vue";
+import App from "./App.vue";
+import VueRouter from "vue-router";
+import LoanCalculator from "@/components/LoanCalculator.vue";
+
+Vue.config.productionTip = false;
+
+Vue.use(VueRouter);
+
+const routes = [
+  { path: "/", component: LoanCalculator },
+  // Add more routes for different loan types
+];
+
+const router = new VueRouter({
+  routes,
+});
+
+new Vue({
+  render: (h) => h(App),
+  router,
+}).$mount("#app");
