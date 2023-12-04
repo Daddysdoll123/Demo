@@ -1,3 +1,5 @@
+LoanCalculator.vue
+
 <template>
   <div>
     <h1 class="header">Loan EMI Calculator</h1>
